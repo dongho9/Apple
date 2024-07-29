@@ -3,6 +3,10 @@
 
 body{
     font-family: "Noto Sans KR", sans-serif;
+    overflow-x: hidden;
+}
+html{
+    overflow-x: hidden;
 }
 header{
     position: fixed;
@@ -146,6 +150,9 @@ section > h2{
     margin-bottom: 15px;
     padding-top: 50px;
 }
+.con02 > div:nth-of-type(5), .con02 > div:last-of-type{
+    margin-bottom: 0;
+}
 .con02 > div .info h2{
     font-size: 34px;
 }
@@ -205,4 +212,127 @@ section > h2{
 }
 .pro09{
     background-image: url(../image/img09.jpg);
+}
+.slide{
+    width: 2560px;
+    height: 667px;  
+    position: relative;
+    white-space: nowrap;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    padding-bottom: 40px;
+}   
+.slide_wrap{
+    width: 12650px;
+    height: 667px;
+}
+.slide_Box{
+    display: inline-block;
+    width: 1250px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: 15px;
+    position: relative;
+    opacity: 50%;
+    transition: 0.5s;
+}
+.slide_Text{
+    position: absolute;
+    left: 60px;
+    color: #fff;
+    transition: 0.5s;
+    bottom: 40px;
+    opacity: 0;
+}
+.slide_Box .watch{
+    display: inline-block;
+    padding: 13px 21px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+.slide_Box .watch a{
+    display: block;
+    font-size: 15px;
+    letter-spacing: -1px;
+    color: #000;
+}
+.slide_Box p{
+    margin-left: 8px;
+    display: inline;
+}
+.slide_Box p span{
+    font-weight: bold;
+}
+.s01{
+    background-image: url(../image/img10.jpg);
+}
+.s02{
+    background-image: url(../image/img11.jpg);
+}
+.s03{
+    background-image: url(../image/img12.jpg);
+}
+.s04{
+    background-image: url(../image/img13.jpg);
+}
+.s05{
+    background-image: url(../image/img14.jpg);
+}
+.s06{
+    background-image: url(../image/img15.jpg);
+}
+.s07{
+    background-image: url(../image/img16.jpg);
+}
+.s08{
+    background-image: url(../image/img17.jpg);
+}
+.s09{
+    background-image: url(../image/img18.jpg);
+}
+.s10{
+    background-image: url(../image/img19.jpg);
+}
+.carousel{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+    height: 40px;      
+}
+.carousel ul{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+}
+.carousel ul li{
+    position: relative;
+    display: block;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.carousel ul li::after{
+    display: block;
+    position: absolute;
+    content: "";
+    background-color: #0000006B;
+    border-radius: 50%;
+    left: 0;
+    top: 50%;    
+    transform: translateY(-50%);   
+    width: 8px;
+    height: 8px;
+}
+.carousel ul li.act::after{
+    background-color: #000 !important;
+}
+/* 푸터영역 */
+footer{
+    height: 1000px;
+    background-color: #ccc;
 }
