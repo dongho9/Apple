@@ -333,6 +333,57 @@ section > h2{
 }
 /* 푸터영역 */
 footer{
-    height: 1000px;
-    background-color: #ccc;
+    background-color: #F5F5F7;
+}
+footer div{
+    padding: 17px 0px;
+    box-sizing: border-box;
+    width: 980px;
+    margin: 0 auto;
+    font-size: 12px;
+    color: #0000008F;
+    border-bottom: 1px solid #0000008F;
+}
+footer nav{
+    width: 980px;
+    margin: 0 auto;
+    padding-top: 17px;
+}
+footer nav > ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+footer nav > ul > li{
+    width: 20%;
+    font-size: 12px;
+    color: #000000E0;
+    margin-bottom: 10px;
+}
+footer nav ul li:nth-of-type(2){
+    order: 3;
+}
+footer nav ul li:nth-of-type(4){
+    order: 4;
+}
+footer nav ul li:nth-of-type(8){
+    order: 8;
+}
+footer nav ul li:nth-of-type(9){
+    order: 6;
+}
+footer nav ul li:nth-of-type(10){
+    order: 9;
+}           
+.sub{
+    margin-top: 10px;
+}
+.sub li{
+    margin-bottom: 10px;
+}
+.sub li:hover a{
+    text-decoration: underline;
+}
+.sub li a{
+    font-size: 12px;
+    color: #000000B8;
 }
